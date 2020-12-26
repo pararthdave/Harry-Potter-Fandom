@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{%block title%}About |
+{% endblock title%}
+{% block body %}
+<header>
+ 
+  <!-- Background image -->
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('static/img/ph.jpg');
+      height: 400px;
+    "
+  >
+    <div class="mask py-4 " style="background-color: rgba(0, 0, 0, 0.7)" >
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Potterheads United</h1>
+          <h5 class="mb-3">Dedicated to the Boy Who Lived</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2 m-4 p-4">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Info</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">What We Offer</a>
+              </h3>
+              <p class="card-text mb-auto"><br>Stay tuned for latest updates straight from Wizarding World, amazing fanfics and best offers on books purchase.</p>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="/static/img/p2.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">Team</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Who We Are</a>
+              </h3>
+              <p class="card-text mb-auto"><br>Nerdy people who believe they're wizards banished into the muggle world.</p>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="static/img/p1.jpg" data-holder-rendered="true" style="width: 250px; height: 250px;">
+          </div>
+        </div>
+      </div>
+  <!-- Background image -->
+</header>
+{% endblock body %}

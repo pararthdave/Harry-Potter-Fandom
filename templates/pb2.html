@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{%block title%}Purchase Book 2 |
+{% endblock title%}
+{% block body %}
+          <div
+    class="p-4 text-center bg-image"
+    style="
+      background-image: url('static/img/pb1.jpg');
+      height: 697px;
+    ">
+<section class="border p-4 py-4 d-flex justify-content-center mb-4">
+
+        
+        <form id="custom-validate-form" method="post" action="/pb2" class="text-center needs-validation" style="width: 100%; max-width: 300px" novalidate="">
+        {% csrf_token %} 
+        <div class="text-white mb-4">
+          <div class="mask py-4 " style="background-color: rgba(0, 0, 0, 0.7)" >
+          <h1>Purchase</h1>
+          <h2> Harry Potter Book 2</h2>
+          <h4>-$52-</h4>
+          </div>
+        </div>
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="custom-validation-name" name="name" class="form-control" placeholder="Name">
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="custom-validation-email" name="email" class="form-control" placeholder="Email">
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <!-- Subject input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="custom-validation-subject" name="remarks" class="form-control" placeholder="Remarks">
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 50.4px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <!-- Submit button -->
+          <button id="custom-validation-button" class="btn btn-dark btn-block mb-4 ">Book a Copy</button>
+         
+</div>
+          <!-- Status message -->
+          <div id="status"></div>
+        </form>
+      </section>
+{% endblock body %}
